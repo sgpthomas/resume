@@ -1,0 +1,68 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Samuel}{Thomas}
+\title{Resumé}                                     % optional, remove / comment the line if not wanted
+\address{1825 Micheltorena St}{Los Angeles, CA 90026}{USA}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(323)~360~6970}                   % optional, remove / comment the line if not wanted
+\email{sgt43@cornell.edu}                               % optional, remove / comment the line if not wanted
+% \homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\photo[64pt][0pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{2016--Present}{B.S}{Cornell University}{Ithaca}{\textit{Grade}}{Major: Computer Science, Minor: Linguistics}  % arguments 3 to 6 can be left empty
+\cventry{2012--2016}{High School Diploma}{John Marshall HS}{Los Angeles}{\textit{GPA 4.071}}{Graduated with High Honors}
+
+\section{Experience}
+\cventry{2013--Present}{LAPTAG Plasma Physics Lab}{UCLA}{}{}{A Laboratory where High School students work with UCLA professors on plasma physics research.
+\url{http://plasmalab.pbworks.com/}\newline{}%
+\begin{itemize}%
+\item Conducted experiments on Berstein waves, drift waves, and whistler waves
+  \begin{itemize}%
+  \item Data analysis lead
+  \item Constructed probes and other equipment needed for experiments
+  \end{itemize}
+\item Co-authored paper on our drift wave research (Drift waves and chaos in a LAPTAG plasma physics experiment)
+\item Presented results from drift wave experiments at American Association of Physics Teachers Conference in 2014 in Long Beach and American Physical Society 2015 Conference in
+Savannah.
+\end{itemize}}
+\cventry{2016--2017}{Math Tutor}{}{}{}{Tutored students in Calculus through a program set up by my Math instructor. Private Math tutoring in pre-algebra.\newline}%
+\cventry{Aug--Dec 2013--2016}{Cross Country}{John Marshall HS}{Los Angeles}{}{}%
+\cventry{Jan--Jun 2012--2016}{Swim Team}{John Marshall HS}{Los Angeles}{}{Captain for two years and led team to become League Champions both years.\newline}%
+
+\section{Computer skills}
+\cvitem{Programming Languages}{Python, Java, Vala, OCaml, C++, C, Assembly, Javascript, HTML, CSS, SQL}
+\cvitem{Computer Programs}{Word, Powerpoint, Excel, Inkscape, IDL, Data Analysis/Manipulation with Python}
+\end{document}
+
+
+%% end of file `template.tex'.
