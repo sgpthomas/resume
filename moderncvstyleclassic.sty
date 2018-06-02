@@ -9,6 +9,7 @@
 %-------------------------------------------------------------------------------
 %                identification
 %-------------------------------------------------------------------------------
+
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{moderncvstyleclassic}[2013/02/09 v1.3.0 modern curriculum vitae and letter style scheme: classic]
 
@@ -150,7 +151,7 @@
   \par\addvspace{2.5ex}%
   \phantomsection{}% reset the anchor for hyperrefs
   \addcontentsline{toc}{section}{#2}%
-  \parbox[t]{\hintscolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\hintscolumnwidth}{0.95ex}}}%
+  \parbox[t]{\hintscolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\hintscolumnwidth}{0.45ex}}}%
   \hspace{\separatorcolumnwidth}%
   \parbox[t]{\maincolumnwidth}{\strut\sectionstyle{#2}}%
   \par\nobreak\addvspace{1ex}\@afterheading}% to avoid a pagebreak after the heading
@@ -292,3 +293,4 @@
 
 
 %% end of file `moderncvstyleclassic.sty'.
+ 
