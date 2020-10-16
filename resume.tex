@@ -29,7 +29,7 @@
 \address{1825 Micheltorena St}{Los Angeles, CA 90026}{USA}  % optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{+1~(323)~360~6970}                           % optional, remove / comment the line if not wanted
 \email{sgt43@cornell.edu}                                   % optional, remove / comment the line if not wanted
-\homepage{github.com/sgpthomas}                     % optional, remove / comment the line if not wanted
+\homepage{https://sgtpeacock.com}                     % optional, remove / comment the line if not wanted
 \photo[36pt][0pt]{picture}                                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 
 %----------------------------------------------------------------------------------
@@ -39,57 +39,125 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2016--Present}{B.S}{Cornell University}{Ithaca}{}{Major: Computer Science}  % arguments 3 to 6 can be left empty
-\cventry{2012--2016}{High School Diploma}{John Marshall HS}{Los Angeles}{}{Graduated with High Honors}
+\cventry{2016--Present}
+{B.S}
+{Cornell University}
+{Ithaca}
+{\textit{GPA 3.013}} % \TODO: figure out the best way to cut this number
+{Major in Computer Science, Concetration in Linguistics}  % arguments 3 to 6 can be left empty
+%
+\cventry{2012--2016}
+{High School Diploma}
+{John Marshall HS}
+{Los Angeles}
+{\textit{GPA 4.071}}
+{Graduated with High Honors}
+
+\section{Publications}
+\cvitem{November 2019}
+{\textit{"Predictable Accelerator Design with Time-Sensitive Affine Types"}.
+  Rachit Nigam, Sachille Atapattu, Samuel Thomas, Theodore Bauer, Apurva Koti,
+  Zhijing Li, Yuwei Ye, Adrian Sampson, Zhiru Zhang. Under review for PLDI 2020.}
 
 \section{Experience}
-\cventry{2019 Summer -- Present}{Capra}{Cornell}{}{}{
+\cventry{2019 Summer -- Present}
+{Capra}
+{Cornell}
+{}
+{}
+{
   \begin{itemize}
-    \item Third author on a paper with Rachit Nigam and Adrian Sampson that
-      describes a novel use of affine type system for modeling hardware
-      resources to make high level synthesis more predictable.
-    \item Develop a prototype interpreter for FuTIL, a novel intermediate
-      language that separates the structure of a computation from the control to
-      make high level synthesis easier. \url{https://github.com/cucapra/futil}
+  \item Worked on Dahlia, a programming language that uses affine types to model
+    hardware resources.
+    \begin{itemize}
+    \item Helped to write the paper we submitted to PLDI 2020.
+    \item Ran extensive experiments comparing Dahlia to other HLS tools.
+    \item Helped write the Dahlia compiler.
+    \end{itemize}
+    % \item Third author on a paper with Rachit Nigam and Adrian Sampson that
+    %   describes a novel use of affine type system for modeling hardware
+    %   resources to make high level synthesis more predictable.
+  \item Lead the Calyx project, a novel intermediate language that separates the
+    structure of a program from the control of the program to enable more
+    modular high level synthesis. \url{https://github.com/cucapra/futil}.
+    \begin{itemize}
+    \item Develop a prototype interpreter and visualizer for Calyx and design
+      its semantics.
+    \item Develop a modular pass framework for Calyx.
+    \end{itemize}
+    % \item Develop a prototype interpreter for FuTIL, a novel intermediate
+    %   language that separates the structure of a computation from the control to
+    %   make high level synthesis easier. \url{https://github.com/cucapra/futil}
     % \item Working with Adrian Sampson on FuTIL, an intermediate language for
     %   hardware compilation.
   \end{itemize}
 }
-\cventry{2018 -- Present}{Teaching Assistant}{Cornell}{}{}{Taught a discussion
-  section for Cornell's CS 3110, a class on functional programming in OCaml.}
-\cventry{2018 Summer}{Information Science Institute}{USC}{}{}{
+%
+\cventry{2018 -- Present}
+{Teaching Assistant}
+{Cornell}
+{}
+{}
+{Taught a discussion section and held office hours for Cornell's CS 3110, a
+  class on functional programming in OCaml.}
+%
+\cventry{2018 Summer}
+{Information Science Institute}
+{USC}
+{}
+{}
+{
   \begin{itemize}
   \item Worked with Greg Ver Steeg on meta machine learning problems.
+    \url{https://github.com/sgpthomas/sklearn-pmlb-benchmarks}.
+    \begin{itemize}
+    \item Design a system to scalably run machine learning experiments across
+      hundreds of machines.
+    \item Reproduce the results from the Penn ML Benchmark suite.
+    \item Extend the metrics gathered from the Penn ML Benchmark suite to enable
+      analysis of generalization error in machine learning algorithms.
+    \end{itemize}
   \item Used the Penn ML Benchmark to gather large amounts of data on the
     performance of different machine learning algorithms.
-    \url{https://github.com/sgpthomas/sklearn-pmlb-benchmarks}.
   \end{itemize}
-  }
-\cventry{2017 Summer}{Network Systems Laboratory}{USC}{}{}{Worked with Wyatt
-  Loyd on DSEF, the Distributed Systems Experimental Framework, a framework for
+}
+%
+\cventry{2017 Summer}
+{Network Systems Laboratory}
+{USC}
+{}
+{}
+{Worked with Wyatt Loyd on DSEF, the Distributed Systems Experimental Framework, a framework for
   improving the reproducability of Distributed Systems experiments.\newline
-\url{https://github.com/DSEF}.}
+  \url{https://github.com/DSEF}.}
 % \cventry{2017--2018 Spring Semester}{Writing an Optimizing Compiler}{}{}{}{Implementing an optimizing compiler in OCaml for a simple imperative language for a Compiler Design class.}
 % \cventry{Oct 2017-- Present}{Developer for Startup}{}{}{}{Major developer for Android App of a startup. Application includes NLP problems. The app hasn't been released yet.\newline}
-\cventry{2013--2016}{LAPTAG Plasma Physics Lab}{UCLA}{}{}{A Laboratory where High School students work with UCLA professors on plasma physics research.
-\url{http://plasmalab.pbworks.com/.}%
-% \begin{itemize}%
-% \item Conducted experiments on Berstein waves, drift waves, and whistler waves
-% \item Co-authored paper on our drift wave research (Drift waves and chaos in a LAPTAG plasma physics experiment)
-% \item Presented results from drift wave experiments at American Association of Physics Teachers Conference in 2014 in Long Beach and American Physical Society 2015 Conference in
-% Savannah.
-% \end{itemize}
+\cventry{2013--2016}
+{LAPTAG Plasma Physics Lab}
+{UCLA}
+{}
+{}
+{
+  Co-authored a paer on drift wave research with LAPTAG, a high school plasma
+  physics laboratory at UCLA. Presented the results of the experiments at two conferences.
+  % \begin{itemize}
+  %   % \item Conducted experiments on Berstein waves, drift waves, and whistler waves
+  % \item Co-authored paper on our drift wave research (Drift waves and chaos in a LAPTAG plasma physics experiment)
+  % \item Presented results from drift wave experiments at American Association of Physics Teachers Conference in 2014 in Long Beach and American Physical Society 2015 Conference in
+  %   Savannah.
+  % \end{itemize}
 }
-\cventry{Jan 2017-- Present}{Cornell Hacking Club}{Cornell
-  University}{Ithaca}{}{Participate in CTFs, hold hacking workshops, and work on
-  club projects.\newline} % Cornell Hacking Club
+\cventry{Jan 2017-- Present}
+{Cornell Hacking Club}
+{Cornell University}
+{Ithaca}
+{}
+{Participate in CTFs, hold hacking workshops, and work on club projects.\newline}
+% Cornell Hacking Club
 % \cventry{2016--2017}{Math Tutor}{}{}{}{Tutored students in Calculus through a program set up by my Math instructor. Private Math tutoring in pre-algebra.\newline} % Math Tutor
 % \cventry{Aug--Dec 2013--2016}{Cross Country}{John Marshall HS}{Los Angeles}{}{Member of the Junior Varsity Team. Won League Championships all three years.\newline} % HS Cross Country
 % \cventry{Jan--Jun 2012--2016}{Swim Team}{John Marshall HS}{Los Angeles}{}{Captain for two years and led team to become League Champions both years.\newline} % HS Swim Team Captain
 
-\section{Computer skills}
-\cvitem{Programming Languages}{OCaml, Scala, Racket, Rosette, Coq, Python, Java, Vala, C++, C, Assembly, ELisp, Rust, Javascript, HTML, CSS, SQL}
+% \section{Computer skills}
+% \cvitem{Programming Languages}{OCaml, Scala, Racket, Rosette, Coq, Python, Java, Vala, C++, C, Assembly, ELisp, Rust, Javascript, HTML, CSS, SQL}
 \end{document}
-
-
-%% end of file `template.tex'.
